@@ -1,0 +1,163 @@
+.App-content {
+  background: #5f2c82;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-height: calc(100vh - 76px);
+  height: fit-content;
+  font-size: calc(19px);
+  padding: 30px;
+  padding-bottom: 56px;
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+  display:flex;
+  flex-direction: column;
+}
+
+.progressBar{
+  border-radius: 13px;
+  height: 8px !important;
+}
+
+.bottomBar{
+	position:fixed;
+  height: 56px;
+	bottom:0;
+	left:0;	
+  width: 100%;
+  background-color: #EEEEEE !important;
+	box-shadow: 0 -2px 5px -2px #333;
+  
+}
+
+.divBox{
+  background-color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  float: left;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.roundedCorners{
+  border-radius: 10px !important;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+}
+
+.select{
+  min-width: 20vw;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-items: left;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.fillRow{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.tripList{
+  width: calc(100% - 22px);
+}
+
+.fillWidth{
+  width: 100%;
+}
+
+.innerAccordian {
+  display: block !important;
+}
+
+.closeButton {
+  z-index: 2;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.2px;
+}
+
+.infoCard {
+  margin: #614385;
+  border: 5px outset #614385;
+  background-color: lightblue;
+  text-align: left;
+  display: inline-block;
+}
+
+.modal {
+  font-size: 12px;
+  background-color: #614385;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.marker {width:0; height:0;}
+
+.marker  span {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing:border-box;
+  width: 30px;
+  height: 30px;
+  color:#fff;
+  border:solid 2px;
+  border-radius: 0 70% 70%;
+  box-shadow:0 0 2px #000;
+  cursor: pointer;
+  transform-origin:0 0;
+  transform: rotateZ(-135deg);
+}
+
+.marker b {transform: rotateZ(135deg)}
